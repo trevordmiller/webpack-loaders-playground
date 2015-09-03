@@ -1,0 +1,41 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "About the project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahcollings/project-name.git"
+  },
+  "author": "Sarah Collings <sarahcollings@gmail.com> (www.sarahcollings.com)",
+  "license": "MIT",
+  "keywords": [],
+  "main": "dist/bundle.js",
+  "scripts": {
+    "lint": "eslint src webpack.config.js",
+    "test": "mocha src/**/*.test.js --compilers js:babel/register",
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "prepublish": "npm run lint && npm test && npm run build"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "5.x.x",
+    "babel-core": "5.x.x",
+    "babel-loader": "5.x.x",
+    "eslint": "1.x.x",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "3.x.x",
+    "file-loader": "0.8.x",
+    "mocha": "2.x.x",
+    "mocha-loader": "^0.7.1",
+    "pre-commit": "1.x.x",
+    "react": "0.13.x",
+    "react-hot-loader": "1.x.x",
+    "webpack": "1.x.x",
+    "webpack-dev-server": "1.x.x"
+  }
+}
