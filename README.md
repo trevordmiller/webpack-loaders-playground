@@ -1,6 +1,6 @@
-# npm-run-all-example
+# webpack-loaders-playground
 
-Debugging npm-run-all
+Webpack playground
 
 ---
 
